@@ -1,0 +1,9 @@
+@trading_bot_dotnet_HostAddress = http://localhost:5280
+
+GET {{trading_bot_dotnet_HostAddress}}/weatherforecast/
+Accept: application/json
+###
+
+GET {{trading_bot_dotnet_HostAddress}}/api/cotation/
+Accept: application/json
+###
