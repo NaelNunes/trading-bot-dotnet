@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Projetos\\trading-bot-dotnet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4396222-3D7F-4F8C-BCD6-027D058F585D}|trading-bot-dotnet.csproj|d:\\projetos\\trading-bot-dotnet\\trading-bot-dotnet.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{B4396222-3D7F-4F8C-BCD6-027D058F585D}|trading-bot-dotnet.csproj|solutionrelative:trading-bot-dotnet.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{B4396222-3D7F-4F8C-BCD6-027D058F585D}|trading-bot-dotnet.csproj|d:\\projetos\\trading-bot-dotnet\\controllers\\cryptocontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4396222-3D7F-4F8C-BCD6-027D058F585D}|trading-bot-dotnet.csproj|solutionrelative:controllers\\cryptocontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4396222-3D7F-4F8C-BCD6-027D058F585D}|trading-bot-dotnet.csproj|d:\\projetos\\trading-bot-dotnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4396222-3D7F-4F8C-BCD6-027D058F585D}|trading-bot-dotnet.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4396222-3D7F-4F8C-BCD6-027D058F585D}|trading-bot-dotnet.csproj|d:\\projetos\\trading-bot-dotnet\\controllers\\cryptocontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4396222-3D7F-4F8C-BCD6-027D058F585D}|trading-bot-dotnet.csproj|solutionrelative:controllers\\cryptocontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4396222-3D7F-4F8C-BCD6-027D058F585D}|trading-bot-dotnet.csproj|d:\\projetos\\trading-bot-dotnet\\trading-bot-dotnet.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{B4396222-3D7F-4F8C-BCD6-027D058F585D}|trading-bot-dotnet.csproj|solutionrelative:trading-bot-dotnet.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "trading-bot-dotnet.http",
               "DocumentMoniker": "D:\\Projetos\\trading-bot-dotnet\\trading-bot-dotnet.http",
               "RelativeDocumentMoniker": "trading-bot-dotnet.http",
@@ -47,13 +47,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "CryptoControllers.cs",
               "DocumentMoniker": "D:\\Projetos\\trading-bot-dotnet\\Controllers\\CryptoControllers.cs",
               "RelativeDocumentMoniker": "Controllers\\CryptoControllers.cs",
-              "ToolTip": "D:\\Projetos\\trading-bot-dotnet\\Controllers\\CryptoControllers.cs*",
-              "RelativeToolTip": "Controllers\\CryptoControllers.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
+              "ToolTip": "D:\\Projetos\\trading-bot-dotnet\\Controllers\\CryptoControllers.cs",
+              "RelativeToolTip": "Controllers\\CryptoControllers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-31T20:18:44.881Z",
               "EditorCaption": ""
@@ -66,7 +66,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Projetos\\trading-bot-dotnet\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-31T20:17:39.582Z",
               "EditorCaption": ""

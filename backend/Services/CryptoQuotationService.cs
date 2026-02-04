@@ -11,12 +11,27 @@ namespace trading_bot_dotnet.Services
         private readonly HttpClient _httpClient;
 
         private readonly Dictionary<string, string> _cryptoSymbols = new()
-        {
-            { "BTCUSDT", "Bitcoin" },   
+{
+            { "BTCUSDT", "Bitcoin" },
             { "ETHUSDT", "Ethereum" },
-            { "ADAUSDT", "Cardano" },
+            { "BNBUSDT", "Binance Coin" },
             { "SOLUSDT", "Solana" },
-            { "XRPUSDT", "Ripple" }
+            { "ADAUSDT", "Cardano" },
+            { "XRPUSDT", "Ripple" },
+            { "DOGEUSDT", "Dogecoin" },
+            { "AVAXUSDT", "Avalanche" },
+            { "DOTUSDT", "Polkadot" },
+            { "MATICUSDT", "Polygon" },
+            { "LINKUSDT", "Chainlink" },
+            { "UNIUSDT", "Uniswap" },
+            { "ATOMUSDT", "Cosmos" },
+            { "LTCUSDT", "Litecoin" },
+            { "NEARUSDT", "NEAR Protocol" },
+            { "APTUSDT", "Aptos" },
+            { "FILUSDT", "Filecoin" },
+            { "ARBUSDT", "Arbitrum" },
+            { "OPUSDT", "Optimism" },
+            { "ICPUSDT", "Internet Computer" }
         };
 
         public CryptoQuotationService(HttpClient httpClient)
@@ -44,7 +59,7 @@ namespace trading_bot_dotnet.Services
                 Symbol = raw.Symbol,
                 Name = _cryptoSymbols.GetValueOrDefault(raw.Symbol, "Unknown"),
                 Currency = "USDT",
-                Timestamp = DateTime.Today,
+                Timestamp = DateTime.Now,
                 Price = raw.Price,
                 Source = "Binance"
             };

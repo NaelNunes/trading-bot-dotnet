@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #0b0e11;
+  color: #eaecef;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: #848e9c;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background: #1e2329;
+  border-right: 1px solid #2b3139;
+  overflow-y: auto;
+  padding: 20px 0;
+}
+
+.sidebar h2 {
+  padding: 0 20px 15px;
+  font-size: 0.9rem;
+  color: #848e9c;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.crypto-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.crypto-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+  border-left: 3px solid transparent;
+}
+
+.crypto-item:hover {
+  background: #2b3139;
+}
+
+.crypto-item.active {
+  background: #2b3139;
+  border-left-color: #f0b90b;
+}
+
+.crypto-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #eaecef;
+}
+
+.crypto-pair {
+  font-size: 0.85rem;
+  color: #848e9c;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 30px;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.title-section h1 {
+  font-size: 1.8rem;
+  color: #eaecef;
+  font-weight: 600;
+}
+
+.symbol {
+  background: #2b3139;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #848e9c;
+  font-weight: 500;
+}
+
+/* Price Section */
+.price-section {
+  background: #1e2329;
+  border: 1px solid #2b3139;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.current-price {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price-label {
+  font-size: 0.85rem;
+  color: #848e9c;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.price-value {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #0ecb81;
+}
+
+.currency {
+  font-size: 1rem;
+  color: #848e9c;
+  margin-top: -5px;
+}
+
+/* Info Grid */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.info-card {
+  background: #1e2329;
+  border: 1px solid #2b3139;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info-label {
+  font-size: 0.85rem;
+  color: #848e9c;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-value {
+  font-size: 1.1rem;
+  color: #eaecef;
+  font-weight: 500;
+}
+
+/* Chart Placeholder */
+.chart-placeholder {
+  background: #1e2329;
+  border: 1px solid #2b3139;
+  border-radius: 8px;
+  padding: 60px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.chart-placeholder p {
+  color: #848e9c;
+  font-size: 1rem;
+}
+
+/* Scrollbar */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #1e2329;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #2b3139;
+  border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #474d57;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    height: 200px;
+    border-right: none;
+    border-bottom: 1px solid #2b3139;
+  }
+  
+  .crypto-list {
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 0 10px;
+  }
+  
+  .crypto-item {
+    min-width: 100px;
+    border-left: none;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .crypto-item.active {
+    border-left: none;
+    border-bottom-color: #f0b90b;
+  }
+  
+  .price-value {
+    font-size: 2rem;
+  }
+}
