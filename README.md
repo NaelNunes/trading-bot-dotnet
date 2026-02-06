@@ -17,7 +17,7 @@ This project is a website that provides real-time cryptocurrency prices using Si
 
 - Git.
 - .NET SDK (version .NET 7 or later) — you can download from the official .NET website.
-- - Node.js >= 18.
+- Node.js >= 18.
 - npm.
 - Optional: an IDE such as Visual Studio, Visual Studio Code, or Rider for easier development.
 
