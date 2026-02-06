@@ -18,12 +18,16 @@ namespace trading_bot_dotnet.Controllers
         [HttpGet("{coin}")]
         public async Task<IActionResult> GetQuotation(string coin)
         {
+            if(string.IsNullOrWhiteSpace(coin))
+            {
+                return BadRequest("Coin symbol is necessary");
+            }
 
             CryptoQuotationResponseDto quotation =  await _quotationService.GetQuotationAsync(coin);
 
             if (quotation is null)
             {
-                return NotFound();
+                return NotFound($"Quotation not founded to: {coin}");
             }
 
             return Ok(quotation);
